@@ -1,0 +1,126 @@
+===========================================================
+MODEL METRICS FILE
+===========================================================
+
+Project:
+Predicting Hypertension Risk Using Machine Learning
+
+Author:
+Gayathri Ramani
+
+Date:
+July 2026
+
+-----------------------------------------------------------
+FINAL MODEL
+-----------------------------------------------------------
+
+Algorithm:
+Random Forest Classifier (Tuned)
+
+Problem Type:
+Binary Classification
+
+Target Variable:
+Hypertension
+0 = No Hypertension
+1 = Hypertension
+
+-----------------------------------------------------------
+DATASET
+-----------------------------------------------------------
+
+Source:
+Behavioral Risk Factor Surveillance System (BRFSS)
+
+Survey Year:
+2021
+
+Number of Observations:
+436,781
+
+Train/Test Split:
+80% / 20%
+
+-----------------------------------------------------------
+FEATURES
+-----------------------------------------------------------
+
+Predictor Variables (20):
+
+- Age
+- Sex
+- Race/Ethnicity
+- Marital Status
+- Education Level
+- Employment Status
+- Income Group
+- Health Insurance Coverage
+- Personal Healthcare Provider
+- Body Mass Index (BMI)
+- Physical Activity
+- Smoking Status
+- E-cigarette Use
+- Physical Health Status
+- Total Fruit Consumption
+- Total Vegetable Consumption
+- French Fry Consumption
+- Metropolitan Status
+- Urban/Rural Classification
+- Missing Value Indicator Variables (where applicable)
+
+-----------------------------------------------------------
+MODEL PARAMETERS
+-----------------------------------------------------------
+
+Estimator:
+RandomForestClassifier()
+
+Random State:
+42
+
+-----------------------------------------------------------
+OPTIMIZED HYPERPARAMETERS
+-----------------------------------------------------------
+
+n_estimators = 100
+
+max_depth = 20
+
+min_samples_split = 10
+
+min_samples_leaf = 10
+
+max_features = 'sqrt'
+
+-----------------------------------------------------------
+MODEL PERFORMANCE
+-----------------------------------------------------------
+
+Accuracy : 0.723
+
+Precision: 0.661
+
+Recall   : 0.609
+
+F1 Score : 0.634
+
+ROC-AUC  : 0.789
+
+Training Accuracy: 0.760
+
+Testing Accuracy : 0.723
+
+-----------------------------------------------------------
+MODEL SELECTION
+-----------------------------------------------------------
+
+The tuned Random Forest was selected as the final model
+because it achieved the strongest overall balance of
+Accuracy, Precision, Recall, F1 Score, and ROC-AUC while
+showing substantially less overfitting than the baseline
+Random Forest.
+
+===========================================================
+END OF FILE
+===========================================================
